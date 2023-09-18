@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'teste';
+    src: url(fonts/Fallo\ del\ Sistema.ttf);
+}
+@font-face {
+    font-family: 'teste 2';
+    src: url(fonts/Letterland.otf);
+    }
+@font-face {
+    font-family: 'teste 3';
+    src: url(fonts/Washington\ Eagles.ttf);
+}
+h1{font-family: 'teste', Helvetica, sans-serif;
+color: rgb(225, 7, 131);
+font-size: 4em;
+ font-weight: normal;
+ font-style: normal;
+ text-decoration-line: underline, colorrgb(47, 0, 255)
+
+ ;}
+ h2{font-family: 'teste 2',Arial, Helvetica, sans-serif;
+font-size: 2em;}
+p{font-family: 'teste 3',Arial, Helvetica, sans-serif;
+font-weight: 200;}

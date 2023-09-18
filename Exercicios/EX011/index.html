@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body><h1>Imagens Dinamicas</h1>
+    <p>Tente abrir essa imagem em varios dispositivos diferentes ou simplesmente aumente ou diminua seu navegar.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png"   alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios no HTML5</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Guess.mp3 " type="audio/mpeg">
+    </audio>
+
+    <h1>Videos Hospedados Localmente</h1>
+    <p>Este video está hospedado no meu propio servido</p>
+   <video controls width="270" poster="imagens/tomando-cafelogo.jpeg" loop >
+    <source src="video/pexels-mkv.mp" type="video/mp4">
+    <source src="video/pexels-webm.webm" type="video/webm">
+    <p>Seu navegador não tem compatibilidade com a reprodução de videos</p>
+    </video>
+    <p>Obrigaduu!!</p>
+
+    <H1>Rodando videos hospedados  externamentes</H1>
+    <p>Video retirado de outro servido(youtube)para demonstração de hospedagem</p>
+    <iframe width="560" height="315" poster="imagens/tomando-cafelogo,jpeg" src="https://www.youtube.com/embed/s11isTPr0Mw?si=XC7cGPYhaQ6Gcwgd" title="YouTube video player" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>
+

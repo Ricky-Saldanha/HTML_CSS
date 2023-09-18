@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo sobre divs</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: rgb(8, 7, 7);
+            background-color: chartreuse;
+            width: 125px;
+        }
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aparendendo sobre div</h1>
+
+    <p>Premiação de numero 1577839, para participar clique veja instruções abaixo</p>
+    <div>
+        Veja se ganhou,passe o mouse.
+        <p>Ganhou misera!!!</p>
+    </div>
+    
+    
+</body>
+</html>
