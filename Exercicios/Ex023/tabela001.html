@@ -8,7 +8,14 @@
 <style>
     table{
         border-collapse: collapse;
-    }
+        width: 500px;
+        position: relative;
+       
+        }
+    thead  {
+         position: sticky;
+         top:-1px;
+        }
     td{
         width: 200px;
         border: 2px solid black;
@@ -26,15 +33,30 @@
         background-color: rgb(0, 0, 0);
         color: white;
     }
-
+    caption{
+      font-size: 2em;
+      text-align: center;
+      background-color: darkgray;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px black;
+     }
+     tbody tr:nth-child(odd){
+      background-color: rgba(255, 255, 0, 0.287);
+     }
+     tbody tr:nth-child(even){
+      background-color: rgba(0, 0, 255, 0.322);
+     }
+    
     
 
 </style>
 <body>
     <table>
+      <caption>Tabelas de População</caption>
      <thead>
-            <td>Municipio</td>
-            <td>População</td>
+            <td scope="col"style="width: 700px;">Municipio</td>
+            <td scope="col" >População</td>
+            
     </thead>
      <tbody>
          <tr>
@@ -147,10 +169,15 @@
          </tr>
      </tbody>  
      <tfoot>
-            <td>Total</td>
+            <td scope="row">Total</td>
             <td><strong>27.000.000.00</strong></td>  
      </tfoot>  
      </table>
+     <p>Lorem ipsum dolor sit,<br> amet consectetur adipisicing elit. Enim distinctio ratione explicabo doloremque ipsum facere rem <br>eligendi amet omnis dolores doloribus voluptate saepe, voluptas rerum fuga est ad natus velit?Lorem ipsum dolor sit amet consectetur adipisicingbr
+       elit. Laudantium eius fugit officiis iste, aperiam repudiandae est aut, aspernatur deleniti voluptas illo vel distinctio, fugiat ipsa dolore? Qui iste quo vitae.</p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at ipsa minus aut ad distinctio tempora commodi. Perspiciatis, porro at placeat optio molestias officia <br>esse ipsa possimus praesentium quam ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laboriosam commodi hic fugit id, iusto ducimus quos architecto voluptatum, amet fugiat, nostrum distinctio nulla unde et aliquam <br>suscipit fuga ipsam. <br> Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Explicabo perspiciatis temporibus voluptas ad maiores sunt, consectetur mollitia odit quidem? Eveniet alias dolore id labore numquam ipsa nostrum nam iure eaque!<br>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Consequuntur rerum aliquid <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus ab sint vel doloremque delectus similique consequuntur nostrum quidem fugiat unde adipisci quisquam perferendis placeat qui facere ratione, eius vitae.br <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptates ipsam animi eveniet, vero quaerat est sunt doloremque cum inventore soluta, porro velit blanditiis quam facere nihil sapiente similique quo.totam, consectetur repudiandae facilis nobis natus. Ad neque quaerat ratione aliquid mollitia, ex at quia. Esse vel aliquam doloribus! <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam vitae, culpa incidunt voluptatibus ipsum ad repellendus asperiores tenetur fugit impedit quos voluptates mollitia, assumenda doloremque facilis? Sint, non doloribus!</p>   <p>Lorem ipsum dolor sit,<br> amet consectetur adipisicing elit. Enim distinctio ratione explicabo doloremque ipsum facere rem <br>eligendi amet omnis dolores doloribus voluptate saepe, voluptas rerum fuga est ad natus velit?Lorem ipsum dolor sit amet consectetur adipisicingbr
+       elit. Laudantium eius fugit officiis iste, aperiam repudiandae est aut, aspernatur deleniti voluptas illo vel distinctio, fugiat ipsa dolore? Qui iste quo vitae.</p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at ipsa minus aut ad distinctio tempora commodi. Perspiciatis, porro at placeat optio molestias officia <br>esse ipsa possimus praesentium quam ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laboriosam commodi hic fugit id, iusto ducimus quos architecto voluptatum, amet fugiat, nostrum distinctio nulla unde et aliquam <br>suscipit fuga ipsam. <br> Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Explicabo perspiciatis temporibus voluptas ad maiores sunt, consectetur mollitia odit quidem? Eveniet alias dolore id labore numquam ipsa nostrum nam iure eaque!<br>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Consequuntur rerum aliquid <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus ab sint vel doloremque delectus similique consequuntur nostrum quidem fugiat unde adipisci quisquam perferendis placeat qui facere ratione, eius vitae.br <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptates ipsam animi eveniet, vero quaerat est sunt doloremque cum inventore soluta, porro velit blanditiis quam facere nihil sapiente similique quo.totam, consectetur repudiandae facilis nobis natus. Ad neque quaerat ratione aliquid mollitia, ex at quia. Esse vel aliquam doloribus! <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam vitae, culpa incidunt voluptatibus ipsum ad repellendus asperiores tenetur fugit impedit quos voluptates mollitia, assumenda doloremque facilis? Sint, non doloribus!</p>   <p>Lorem ipsum dolor sit,<br> amet consectetur adipisicing elit. Enim distinctio ratione explicabo doloremque ipsum facere rem <br>eligendi amet omnis dolores doloribus voluptate saepe, voluptas rerum fuga est ad natus velit?Lorem ipsum dolor sit amet consectetur adipisicingbr
+       elit. Laudantium eius fugit officiis iste, aperiam repudiandae est aut, aspernatur deleniti voluptas illo vel distinctio, fugiat ipsa dolore? Qui iste quo vitae.</p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at ipsa minus aut ad distinctio tempora commodi. Perspiciatis, porro at placeat optio molestias officia <br>esse ipsa possimus praesentium quam ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laboriosam commodi hic fugit id, iusto ducimus quos architecto voluptatum, amet fugiat, nostrum distinctio nulla unde et aliquam <br>suscipit fuga ipsam. <br> Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Explicabo perspiciatis temporibus voluptas ad maiores sunt, consectetur mollitia odit quidem? Eveniet alias dolore id labore numquam ipsa nostrum nam iure eaque!<br>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Consequuntur rerum aliquid <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus ab sint vel doloremque delectus similique consequuntur nostrum quidem fugiat unde adipisci quisquam perferendis placeat qui facere ratione, eius vitae.br <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptates ipsam animi eveniet, vero quaerat est sunt doloremque cum inventore soluta, porro velit blanditiis quam facere nihil sapiente similique quo.totam, consectetur repudiandae facilis nobis natus. Ad neque quaerat ratione aliquid mollitia, ex at quia. Esse vel aliquam doloribus! <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam vitae, culpa incidunt voluptatibus ipsum ad repellendus asperiores tenetur fugit impedit quos voluptates mollitia, assumenda doloremque facilis? Sint, non doloribus!</p>
+
      
  
     
