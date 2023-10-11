@@ -9,7 +9,7 @@
     <fieldset style="background-color: rgba(78, 68, 55, 0.47);">
         <legend>Formulario</legend>
         <h1>Coloque seus dados aqui.</h1>
-        <form action="cadastro.php" method="get" autocomplete="off">
+        <form action="cadastro.php" method="post" autocomplete="off">
             <p>
                 <label for="iname" >Nome</label>
                 <input type="text" name="name" id="iname" required minlength="5" placeholder="Nome Completo">
@@ -51,6 +51,76 @@
             <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label>
             <input type="radio" name="sexo" id="ifemi"><label for="ifemi">Feminino</label>
             <input type="radio" name="sexo" id="igay"><label for="igay">Gay</label>
+            <p>
+                <label for="iest"><strong>Estados</strong></label><br>
+                <select name="est" id="ist">
+                    <option value=""select>--Selecione--</option>
+                    <optgroup label="Meio Do Mapa">
+                    <option value="Mg">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio De Janeiro</option>
+                </optgroup>
+                <optgroup label="Fundo Do Mapa">
+                    <option value="RS">Rio Grande Do Sul</option>
+                    <option value="PR">Parnaiba</option>
+                </optgroup>
+                <optgroup label="Parte De Cima">
+                        <option value="MA">Maranhão</option>
+                        <option value="BH">Bahia</option>
+                        <option value="Sl">Sei la</option>
+                   </optgroup>
+                     </select>
+            </p>    
+                   
+            <p>
+
+                    <label for="iprof">Profisao</label><br>
+                    <input type="text" name="prof" id="iprof" list="listprof">
+                    <datalist id="listprof">
+                        <option >Mecanico</option>
+                        <option >Medico</option>
+                        <option >Professor</option>
+                    </datalist>
+            </p>
+            <p>
+                <label for="imen">Mensagem</label><br>
+                <textarea name="mens" id="imen" cols="30" rows="10"></textarea>
+            </p><br>
+
+            <fieldset>
+                <legend><strong>Escolha um numero</strong></legend>
+                <p>
+                    <label for="num1">Numero 1:</label>
+                    <input type="number" name="numero" id="num1" required,
+                    oninput="isoma.innerHTML = Number(num1.value)+ Number (num2.value)"
+                    ><br>
+
+
+                    <label for="num2">Numero 2: </label>
+                    <input type="number" name="numero" id="num2" required ,
+                     oninput="isoma.innerHTML = Number(num1.value) + Number (num2.value)"> 
+                     <br>
+                      <label for="isoma">Soma:</label>
+                    <output name="soma" id="isoma">0</output>
+                     
+                    <label for="barr">Quantidade:</label>
+                    <input type="range" name="valor" id="barr" max="25" min="1"
+                    oninput="isoma.innerHTML= Number (barr.value)">
+                    <output id="soma"></output>
+
+
+              
+                    
+                </p>
+            
+
+
+            </fieldset>
+
+              
+
+          
+       
         </fieldset>
             <p>
                 <input type="submit" value="Enviar">
