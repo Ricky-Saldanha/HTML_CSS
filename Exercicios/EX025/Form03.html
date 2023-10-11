@@ -6,33 +6,57 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Coloque seus dados aqui.</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-
-        <p> 
-            <label for="iname" >Nome</label>
-            <input type="text" name="name" id="iname" required minlength="5" placeholder="Nome Completo">
-         </p>
-        <p>
-           <label for="inumero">Media</label>
-            <input type="number" name="numero" id="inumero" required min="1" max="2" placeholder="0-10" step="0.1">
-        </p>
-        <p>
-            <label for="idate">Periodo Letivo</label> 
-            <input type="date" name="date" id="idate">
-
-            <label for="idate2">até</label>
-            <input type="date" name="date" id="idate2">
-        </p>
-        <p>
-            <label for="itime">Horario de termino</label>
-            <input type="time" name="time" id="itime">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar" >
-            <input type="text" name="" id="">
-        </p>
+    <fieldset style="background-color: rgba(78, 68, 55, 0.47);">
+        <legend>Formulario</legend>
+        <h1>Coloque seus dados aqui.</h1>
+        <form action="cadastro.php" method="get" autocomplete="off">
+            <p>
+                <label for="iname" >Nome</label>
+                <input type="text" name="name" id="iname" required minlength="5" placeholder="Nome Completo">
+             </p>
+            <p>
+               <label for="inumero">Media</label>
+                <input type="number" name="numero" id="inumero" required min="1" max="2" placeholder="0-10" step="0.1">
+            </p>
+            <p>
+                <label for="idate">Periodo Letivo</label>
+                <input type="date" name="date" id="idate">
+                <label for="idate2">até</label>
+                <input type="date" name="date" id="idate2">
+            </p>
+            <p>
+                <label for="itime">Horario de termino</label>
+                <input type="time" name="time" id="itime">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" placeholder="exemplo@exemplo.com" required>
+            </p>
+            <p>
+                <label for="itele">Telefone</label>
+                <input type="tel" name="tele" id="itele"required placeholder="00-0000-0000">
+                <style> input{border-color: red;}</style>
+            </p>
+            <p>
+         <fieldset>
+            <legend>Qual esporte voçê mais gosta?</legend>
+                <input type="checkbox" name="fut" id="Futebol"><label for="Futebol">Futebol</label><br>
+                <input type="checkbox" name="Basquet" id="Basquete"> <label for="Basquete">Basquete</label><br>
+                <input type="checkbox" name="Hnad-boll" id="hand"><label for="hand">Hand-boll </label> <br>
+                <input type="checkbox" name="volei" id="Volei"><label for="Volei">Volei</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="ifemi"><label for="ifemi">Feminino</label>
+            <input type="radio" name="sexo" id="igay"><label for="igay">Gay</label>
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar" >
+            </p>
+    </fieldset>
 
     </form>
     
